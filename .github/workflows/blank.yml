@@ -3,11 +3,8 @@ name: Deploy to EKS
 on:
   push:
     branches:
-      - main  # 🚀 Roda o deploy toda vez que houver um push na branch `main`
-    paths:
-      - "deployments.yaml"
-      - "services.yaml"
-  workflow_dispatch:  # 🚀 Permite rodar manualmente pelo GitHub Actions UI
+      - master  # 🚀 Dispara quando houver push na branch `master`
+  workflow_dispatch:  # 🔄 Permite rodar manualmente pelo GitHub Actions
 
 jobs:
   deploy:
