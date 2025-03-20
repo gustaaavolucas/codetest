@@ -28,7 +28,7 @@ jobs:
 
       - name: 🚢 Aplicar Deployment no Kubernetes
         run: |
-          kubectl apply -f deployments.yaml
+          kubectl apply -f deployment.yaml
           kubectl apply -f services.yaml
 
       - name: ✅ Verificar os Recursos Criados
