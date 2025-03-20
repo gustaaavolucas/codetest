@@ -27,7 +27,7 @@ jobs:
 
       - name: 🔄 Atualizar Kubeconfig para Acessar o EKS
         run: |
-          aws eks update-kubeconfig --region us-east-1 --name meu-cluster
+          aws eks update-kubeconfig --region us-east-1 --name swile-cluster
 
       - name: 🚢 Aplicar Deployment no Kubernetes
         run: |
