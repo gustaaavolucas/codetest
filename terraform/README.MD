@@ -1,2 +1,0 @@
-Install Terraform
-Install kubectl
