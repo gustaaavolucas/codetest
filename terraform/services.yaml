@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: swile-app-service
+spec:
+  selector:
+    app: swile-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type : LoadBalancer
